@@ -1,0 +1,244 @@
+/* Movie Detail */
+  
+.movie-detail{
+    width: 100%;
+    position: relative;
+  }
+  
+  .movie-detail .movie-detail-cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+  }
+  
+  .movie-detail .movie-detail-actions{
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .movie-detail .goback{
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .movie-detail .circuralBar{
+    margin-right: 20px;
+    width: 40px;
+  }
+  
+  .movie-detail .movie-detail-cover .detail{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    color: white;
+    padding: 0 20px;
+    margin-top: -50px;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .title{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .line{
+    width: 130px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: white;
+    margin:5px 0 20px 0;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .original-title{
+    font-size: 15px;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .release_date{
+    background-color: white;
+    padding: 5px 0px;
+    margin: 15px 0;
+    font-size: 12px;
+    width: 100px;
+    color: #29323c;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .genres{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .genres .genre{
+    padding-right: 10px;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .overview{
+    width: 380px;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  
+  .movie-detail .movie-detail-cover .detail .icon{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color: #29323c;
+    font-size: 13px;
+    margin:5px 10px 0 0;
+  
+  }
+  
+  .movie-detail .movie-detail-cover .triangle{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .movie-detail .movie-detail-cover .teaser{
+    position: absolute;
+    bottom: -200px;
+    right: 50px;
+    z-index: 10;
+    width: 60%;
+    height: 400px;
+  }
+  
+  
+  /* Actor part of movieDetail */
+  
+  .actors-container {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .actors-container h1 {
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .actors-container .actors {
+    width: 90%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; 
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .actors-container .actor {
+    display: flex;
+    flex-direction: column; 
+    background-color: #29323c;
+    text-align: left;
+    color: white;
+    border-radius: 20px 0 20px 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .actors-container .actor .actor-image {
+    width: 100%; 
+    height: 200px; 
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .actors-container .actor .actor-detail {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+  }
+  
+  .actors-container .actor .actor-detail span {
+    color: #485563;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .actors-container .actor .actor-detail p {
+    font-size: 13px;
+    margin: 0px;
+  }
+  
+  .actors-container .actor img {
+    margin-right: 0; 
+  }
+  
+  
+  /* Vedio player part of movieDetail */
+  
+  .player {
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .player-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .player-wrapper .react-player{
+    width: 90% !important;
+    height: 450px !important;
+  }
+  
+  .player-wrapper .player-btns{
+    width: 80%;
+  }
+  
+  .player-wrapper .player-btn{
+    background-color: #29323c;
+    margin:4px 2px;
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  
+  .player-wrapper .player-btn:hover{
+    background-color: #29323c8c;
+  }
+  
+  .active{
+    background-color: #29323c8c !important;
+  }
+  
+  .player-wrapper .player-btn span{
+    font-weight: bold;
+  }
+  

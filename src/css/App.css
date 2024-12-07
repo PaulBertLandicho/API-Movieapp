@@ -1,0 +1,167 @@
+/* Dark Mode Styles */
+
+body.dark-mode {
+    background-color: black;
+    color: #ffffff;
+  }
+  
+  .nav.dark {
+    background-color: black;
+  }
+  
+  .main-nav.dark {
+    background-color: #222;
+  }
+  
+  .sub-nav.dark {
+    background-color: #444;
+    color: #ddd;
+  }
+  
+  .watch-list {
+    color: white;
+  }
+  
+  /* Dark Mode Toggle */
+  
+  .dark-mode-toggle {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  
+  /* App */
+  
+  .App {
+    text-align: center;
+  }
+  
+  
+  /* WatchListBtn */
+  
+  .watchListBtn button{
+    position: relative;
+    background-color: #485563;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+   
+  .watchListBtn button:after{
+    position: absolute;
+    font-family:Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: '\f055' ;
+    top: 13px;
+    left: 10px;
+    color: white;
+    font-size: 8px;
+    width: 20px;
+    height: 20px;
+    transition: .3s ease-in-out;
+  }
+  
+  .watchListBtn button:hover , .watchListBtn button:hover:after{
+    color: #29323c;
+  }
+  
+  
+  /* General mobile adjustments */
+  
+  @media (max-width: 768px) {
+    .movie-detail .movie-detail-cover .desktop{
+      display: none;
+    }
+  
+    .movie-detail .movie-detail-cover .detail .overview{
+      width: 100%;
+    }
+  
+    .movie-detail .movie-detail-cover .triangle{
+      height: 50px;
+    }
+  }  
+  
+  @media (max-width: 768px) {
+  
+    /* Slider adjustments */
+    .slider-cover {
+      height: 60vh;
+    }
+  
+    .slider-cover .slider-cover-detail {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .slider-item img {
+      height: auto;
+    }
+  
+    .movie-detail .movie-detail-cover .mobile{
+      display: none;
+    }
+  }
+  
+  /* Global styles */
+  
+  a{
+    text-decoration: none;
+  }
+  
+  ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  ul li{
+    padding: 0px 10px;
+  }
+  
+  
+  /* Scroll bar */
+  
+  /* width */
+  ::-webkit-scrollbar {
+    background-color: hsl(235, 24%, 19%);
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: hsla(235, 21%, 11%, 0.322);
+    box-shadow: 0 0 3px hsl(235, 21%, 11%);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(167, 167, 167, 0.7);
+    transition: .3s ease-in-out;
+  
+  }
+  
+  
+  
+  
+  
+  
