@@ -1,6 +1,8 @@
 import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import { Link } from 'react-router-dom';
+import WatchListItem from './watchlistitem.js'; // Correct import
+
 
 function WatchListItem({ watchList, setWatchList, height }) {
 
