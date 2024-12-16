@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import Loader from './loader'; // Check that the file is named loader.js
-import MovieSlider from './movieSlider'; // Check that the file is named movieSlider.js
+import Loader from './loader.js'; // Check that the file is named loader.js
+import MovieSlider from './movieSlider.js'; // Check that the file is named movieSlider.js
 
 function MovieDetail() {
     const { id } = useParams();
