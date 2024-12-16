@@ -8,7 +8,7 @@ import './css/maincover.css';
 import './css/movieCatalogue.css';
 import Nav from './components/Nav.js';  // Correct import
 import MainContent from './components/mainContent.js';  // Ensure the '.js' extension is included
-import MovieDetail from './components/movieDetail';
+import MovieDetail from './components/movieDetail.js';
 
 
 function App() {
