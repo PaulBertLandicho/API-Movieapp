@@ -9,6 +9,7 @@ import './css/movieCatalogue.css';
 import Nav from './components/Nav.js';
 import MainContent from './components/mainContent.js';
 import MovieDetail from './components/movieDetail.js';
+import WatchListItem from './components/watchlistitem.js';
 
 
 function App() {
