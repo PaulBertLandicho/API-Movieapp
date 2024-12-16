@@ -7,8 +7,7 @@ import './css/movieDetail.css';
 import './css/maincover.css';
 import './css/movieCatalogue.css';
 import Nav from './components/Nav.js';  // Correct import
-import MainContent from './components/MainContent.js';  // Correct importimport MainContent from './components/mainContent';
-import WatchlistItem from './components/watchlistitem.js';  // Correct importimport MainContent from './components/mainContent';
+import MainContent from './components/MainContent.js';  // Ensure the '.js' extension is included
 import MovieDetail from './components/movieDetail';
 
 
