@@ -8,7 +8,6 @@ import './css/maincover.css';
 import './css/movieCatalogue.css';
 import Nav from './components/Nav.js';  // Correct import
 import MainContent from './components/MainContent.js';  // Correct importimport MainContent from './components/mainContent';
-import WatchlistItem from './components/watchlistitem.js';  // Correct importimport MainContent from './components/mainContent';
 import MovieDetail from './components/movieDetail';
 
 
