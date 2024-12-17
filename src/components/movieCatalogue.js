@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Form from './form';
 import Paginate from 'react-paginate';
-import WatchListBtn from './watchListBtn';
+import WatchListBtn from './watchListBtn.js';
 
 function MovieCatalogue({ watchList, setWatchList }) {
 
