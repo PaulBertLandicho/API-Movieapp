@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Form from './form';
+import Form from './form.js';
 import Paginate from 'react-paginate';
 import WatchListBtn from './watchListBtn.js';
 

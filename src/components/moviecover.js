@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import WatchListBtn from './watchListBtn';
-import Loader from './loader';
+import WatchListBtn from './watchListBtn.js';
+import Loader from './loader.js';
 
 function MovieCover({ watchList, setWatchList }) {
 

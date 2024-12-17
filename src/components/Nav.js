@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import WatchListItem from './watchlistitem';
+import WatchListItem from './watchlistitem.js';
 
 function Nav({ watchList, setWatchList }) {
     const [height, setHeight] = useState(0);
