@@ -6,9 +6,10 @@ import './css/loader.css';
 import './css/movieDetail.css';
 import './css/maincover.css';
 import './css/movieCatalogue.css';
-import Nav from './components/Nav.js';  // Correct import
-import MainContent from './components/MainContent.js';  // Ensure the '.js' extension is included
+import Nav from './components/Nav';
+import MainContent from './components/mainContent';
 import MovieDetail from './components/movieDetail';
+import WatchListItem from './components/watchlistitem.js';
 
 
 function App() {

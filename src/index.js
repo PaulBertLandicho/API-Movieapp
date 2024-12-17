@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App.js';  
-import * as serviceWorkerRegistration from './serviceWorkerRegistration.js';
-import { BrowserRouter } from 'react-router-dom';  // Import BrowserRouter
+import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>  {/* Wrap the App with BrowserRouter */}
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 
